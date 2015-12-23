@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Issue Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/issue.css" />
+    <script src="../js/issue.js"></script>
+</head>
+
+<body onload="showclass()">
+    <div id="issue_box">
+        <div id="head">商品发布</div>
+        <div id="prompt"><p id="prompt_txt"></p></div></br>
+        <form action="" mothed="post" onsubmit="return issue_form(this)">
+            *商品名称：<input type="text" autofocus="autofocus" id="name"></input></br></br>
+
+            *商品图片：<input type="file" id="pic" accept="jpg"></input></br></br>
+
+            *商品描述：<textarea id="describe" rows="3" cols="21"></textarea></br></br>
+
+            &nbsp;&nbsp;*价格：<input type="text" id="price"></input></br></br>
+
+            *联系方式：<input type="text" id="phone"></input></br></br>
+            
+            &nbsp;&nbsp;*分类：<select id="class1" onchange="showclass()">
+                               <option>数码电器</option>
+                               <option>电脑办公</option>
+                               <option>日用家居</option>
+                               <option>男装女装</option>
+                               <option>个护化妆</option>
+                               <option>鞋包配饰</option>
+                               <option>运动保健</option>
+                               <option>玩具乐器</option>
+                               <option>食品饮料</option>
+                               <option>图书音像</option>
+                               <option>其他</option>
+                               </select>
+                               <select id="class2"></select>
+
+            </br></br>
+            <input type="submit" value="发&nbsp;&nbsp;&nbsp;布" id="submit_button"></input>
+       </form>
+    </div>
+</body>
+
+</html>

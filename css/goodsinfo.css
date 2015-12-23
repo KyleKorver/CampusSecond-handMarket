@@ -1,0 +1,138 @@
+body{
+	overflow:hidden;
+}
+
+#goods_information_box{
+	position:relative;
+	left:2.5em;
+	width:43.75em;
+	height:22.8125em;
+	border-style:solid;
+	border-width:0.0625em;
+	border-color:#98BF21;
+}
+
+#head{
+	position:relative;
+	height:1.25em;
+	background-color:#98BF21;
+	font-style:"黑体";
+	font-weight:bold;
+	color:#FFFFFF;
+	padding:0.4375em;
+}
+
+#name{
+	position:relative;
+	left:1.25em;
+	font-weight:bold;
+}
+
+#pic{
+	position:relative;
+	top:-1.875em;
+	left:1.25em;
+	height:15.625em;
+	width:15.625em;
+}
+
+#collect{
+	position:relative;
+	left:-14.6875em;
+	top:-0.5em;
+	width:5em;
+	height:1.6875em;
+	background-color:#98BF21;
+	color:white;
+	border-color:#98BF21;
+	font-family: "黑体";
+    font-size:0.9375em;
+}
+
+#price{
+	position:relative;
+	top:-3.1875em;
+	left:13.125em;
+	font-size:0.875em;
+}
+
+#des_box{
+	position:relative;
+	top:-21.5625em;
+	left:18.75em;
+	width:23.75em;
+	height:6.25em;
+}
+
+#describe{
+	color:gray;
+	font-size:0.8125em;
+	word-wrap:break-word;
+}
+
+#seller{
+	position:relative;
+	top:-24em;
+	left:23em;
+	font-size:0.8125em;
+}
+
+#phone{
+	position:relative;
+	top:-23em;
+	left:23em;
+	font-size:0.8125em;
+}
+
+#contact{
+	position:relative;
+	top:-20.625em;
+	left:20em;
+	width:6.25em;
+	height:1.6875em;
+	background-color:#98BF21;
+	color:white;
+	border-color:#98BF21;
+	font-family: "黑体";
+    font-size:0.9375em;
+}
+
+#link{
+	position:relative;
+	top:-19.75em;
+	left:37.5em;
+}
+
+a:link,a:visited{color:#98BF21;font-size:0.8125em;}
+
+#contact_box{
+	position:relative;
+	top:-17.5em;
+	left:18.75em;
+	width:25.75em;
+	height:14.5em;
+	background-color: white;
+	border-style:solid;
+	border-width:0.0625em;
+	border-color:#98BF21;
+	visibility:hidden;
+}
+
+textarea{
+	position:relative;
+	top:2.5em;
+	left:2.5em;
+	resize:none;
+}
+
+#send{
+	position:relative;
+	top:4.375em;
+	width:3.125em;
+	height:1.6875em;
+	background-color:#98BF21;
+	color:white;
+	border-color:#98BF21;
+	font-family: "黑体";
+    font-size:0.9375em;
+}

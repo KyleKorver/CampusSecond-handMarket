@@ -1,0 +1,33 @@
+.goodsdiv{
+	position:relative;
+	left:1.875em;
+	height:10.625em;
+	width:18.75em;
+	float:left;
+	border-style:solid;
+	border-width:0.0625em;
+	border-color:#EAF2D3;
+}
+
+.goodsid{
+	display:none;
+}
+
+.goodsname{
+	position:relative;
+	left:1.875em;
+	font-weight: bold;
+}
+
+.goodspic{
+	position:relative;
+	left:1.875em;
+	width:5em;
+	height:5em;
+}
+
+.goodsprice{
+	position:relative;
+	left:1.875em;
+	font-size:0.8125em;
+}

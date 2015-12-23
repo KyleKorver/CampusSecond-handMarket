@@ -1,0 +1,72 @@
+#register_box{
+	position:relative;
+	top:1.875em;
+	left:17.5em;
+	width:25em;
+	height:26.875em;
+	border-style:solid;
+	border-width:0.0625em;
+	border-color:#98BF21;
+}
+
+#head{
+	position:relative;
+	height:1.25em;
+	background-color:#98BF21;
+	font-style:"黑体";
+	font-weight:bold;
+	text-align:center;
+	color:#FFFFFF;
+	padding:0.4375em;
+}
+
+form{
+	position:relative;
+	left:3.125em;
+}
+
+#prompt_txt{
+	position:relative;
+	left:5em;
+	height:0.9375em;
+	color:red;
+	font-size:0.8125em;
+}
+
+#validate{
+	width:5em;
+}
+
+#vali_picture{
+	border:0em;
+	background-color: gray;
+	width:4.0625em;
+	height:1.25em;
+	color:red;
+	font-weight:bold;
+	font-style:italic;
+	font-family:Arial;
+	font-size:0.9375em;
+	letter-spacing:0.3125em;
+}
+
+#submit_button{
+	position:relative;
+	top:-1em;
+	left:5em;
+	width:9.375em;
+	height:1.6825em;
+	background-color:#98BF21;
+	color:white;
+	border-color:#98BF21;
+	font-family: "黑体";
+    font-size:0.9375em;
+}
+
+#clickchange{
+	color:gray;
+	position:relative;
+	left:7em;
+	font-size:0.75em;
+	height:0.3125em;
+}

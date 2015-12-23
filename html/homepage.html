@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="../css/homepage.css" />
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="../js/homepage.js"></script>
+</head>
+
+<body onload="startTime(),home()">
+<!--页头-->
+    <div id="header">
+    	<img id="icon" src="../image/icon/icon.jpg" alt="ICON" />
+    	<p id="web_name"><span>校园二手市场</span></br>www.xyessc.com</p>
+        <p id="date"></p>
+    	<div id="header_link">
+            <a id="home" href="javascript:home()">首页</a>&nbsp;
+    		<a id="login" href="javascript:login()">登录</a>&nbsp;
+    	    <a id="register" href="javascript:register()">注册</a>&nbsp;
+    	    <a id="my_page" href="javascript:mypage()">我的主页</a>
+    	</div>
+    	<form id="search" action="" method="get" onsubmit="return search(this)">
+    		<input type="text" /><input type="submit" value="搜索" style="background-color:#EAF2D3" />    		
+    	</form>
+    </div>
+    
+    <!--导航栏-->
+    <!--数码电器-->
+    <ul class="navigation">
+        <li><a id="electrical_product" class="class1" href="#">数码电器</a></li>
+        <div class="detailed_class">
+            <li><a id="phone" class="class2" href="#">手机通讯</a></li>
+            <li><a id="phone_parts" class="class2" href="#">手机配件</a></li>
+            <li><a id="camera" class="class2" href="#">摄像摄影</a></li>
+            <li><a id="digital_parts" class="class2" href="#">数码配件</a></li>
+            <li><a id="video" class="class2" href="#">音影娱乐</a></li>
+            <li><a id="electronic_equipment" class="class2" href="#">电子设备</a></li>
+        </div>
+    </ul>
+    <!--电脑办公-->
+    <ul class="navigation">
+        <li><a id="office" class="class1" href="#">电脑办公</a></li>
+        <div class="detailed_class">
+            <li><a id="computer" class="class2" href="#">电脑整机</a></li>
+            <li><a id="computer_parts" class="class2" href="#">电脑配件</a></li>
+            <li><a id="peripheral" class="class2" href="#">外设产品</a></li>
+            <li><a id="office_supplies" class="class2" href="#">办公设备</a></li>
+            <li><a id="internet_product" class="class2" href="#">网络产品</a></li>
+            <li><a id="stationery" class="class2" href="#">文具耗材</a></li>
+        </div>
+    </ul>
+    <!--日用家居-->
+    <ul class="navigation">
+        <li><a id="everyday_use" class="class1" href="#">日用家居</a></li>
+        <div class="detailed_class">
+            <li><a id="storage" class="class2" href="#">收纳用品</a></li>
+            <li><a id="umbrella" class="class2" href="#">雨伞雨具</a></li>
+            <li><a id="shower" class="class2" href="#">浴室用品</a></li>
+            <li><a id="clean_tool" class="class2" href="#">清洁工具</a></li>
+            <li><a id="cups" class="class2" href="#">餐饮用具</a></li>
+            <li><a id="bed" class="class2" href="#">床上用品</a></li>
+        </div>
+    </ul>
+    <!--男装女装-->
+    <ul class="navigation">
+        <li><a id="dress" class="class1" href="#">男装女装</a></li>
+        <div class="detailed_class">
+            <li><a id="man_coat" class="class2" href="#">男士上装</a></li>
+            <li><a id="woman_coat" class="class2" href="#">女士上装</a></li>
+            <li><a id="man_pants" class="class2" href="#">男士下装</a></li>
+            <li><a id="woman_pants" class="class2" href="#">女士下装</a></li>
+            <li><a id="man_hat" class="class2" href="#">男士帽袜</a></li>
+            <li><a id="woman_hat" class="class2" href="#">女士帽袜</a></li>
+        </div>
+    </ul>
+    <!--个护化妆-->
+    <ul class="navigation">
+        <li><a id="cosmetic" class="class1" href="#">个护化妆</a></li>
+        <div class="detailed_class">
+            <li><a id="facial_care" class="class2" href="#">面部护肤</a></li>
+            <li><a id="hair" class="class2" href="#">洗发护发</a></li>
+            <li><a id="skin_care" class="class2" href="#">身体护肤</a></li>
+            <li><a id="woman_care" class="class2" href="#">女性护理</a></li>
+            <li><a id="beauty" class="class2" href="#">香水彩妆</a></li>
+            <li><a id="clean" class="class2" href="#">清洁用品</a></li>
+        </div>
+    </ul>
+    <!--鞋包配饰-->
+    <ul class="navigation">
+        <li><a id="shoes_bag" class="class1" href="#">鞋包配饰</a></li>
+        <div class="detailed_class">
+            <li><a id="man_shoes" class="class2" href="#">男士鞋靴</a></li>
+            <li><a id="woman_shoes" class="class2" href="#">女士鞋靴</a></li>
+            <li><a id="man_bag" class="class2" href="#">男士箱包</a></li>
+            <li><a id="woman_bag" class="class2" href="#">女士箱包</a></li>
+            <li><a id="man_acc" class="class2" href="#">男士配饰</a></li>
+            <li><a id="woman_acc" class="class2" href="#">女士配饰</a></li>
+        </div>
+    </ul>
+    <!--运动保健-->
+    <ul class="navigation">
+        <li><a id="sport" class="class1" href="#">运动保健</a></li>
+        <div class="detailed_class">
+            <li><a id="sports_goods" class="class2" href="#">体育用品</a></li>
+            <li><a id="outdoor_equipment" class="class2" href="#">户外装备</a></li>
+            <li><a id="fishing" class="class2" href="#">垂钓用品</a></li>
+            <li><a id="swim" class="class2" href="#">游泳用品</a></li>
+            <li><a id="health_equipment" class="class2" href="#">保健器械</a></li>
+            <li><a id="protective" class="class2" href="#">护理护具</a></li>
+        </div>
+    </ul>
+    <!--玩具乐器-->
+    <ul class="navigation">
+        <li><a id="toy_instrument" class="class1" href="#">玩具乐器</a></li>
+        <div  class="detailed_class">
+            <li><a id="powerdriven" class="class2" href="#">遥控电动</a></li>
+            <li><a id="fancy_toy" class="class2" href="#">益智玩具</a></li>
+            <li><a id="board_game" class="class2" href="#">桌游玩具</a></li>
+            <li><a id="model_toy" class="class2" href="#">模型玩具</a></li>
+            <li><a id="decompression" class="class2" href="#">创意减压</a></li>
+            <li><a id="instrument" class="class2" href="#">乐器相关</a></li>
+        </div>
+    </ul>
+    <!--食品饮料-->
+    <ul class="navigation">
+        <li><a id="food_drink" class="class1" href="#">食品饮料</a></li>
+        <div class="detailed_class">
+            <li><a id="import_food" class="class2" href="#">进口食品</a></li>
+            <li><a id="snack" class="class2" href="#">休闲食品</a></li>
+            <li><a id="drink" class="class2" href="#">茶水饮料</a></li>
+            <li><a id="cake" class="class2" href="#">饼干蛋糕</a></li>
+            <li><a id="milk" class="class2" href="#">牛奶乳品</a></li>
+            <li><a id="gift_coupon" class="class2" href="#">食品礼券</a></li>
+        </div>
+    </ul>
+    <!--图书音像-->
+    <ul class="navigation">
+        <li><a id="book_video" class="class1" href="#">图书音像</a></li>
+        <div class="detailed_class">
+            <li><a id="textbook" class="class2" href="#">教育书籍</a></li>
+            <li><a id="human_social" class="class2" href="#">人文社科</a></li>
+            <li><a id="magazine" class="class2" href="#">杂志书刊</a></li>
+            <li><a id="music" class="class2" href="#">音乐影视</a></li>
+            <li><a id="novel" class="class2" href="#">小说动漫</a></li>
+            <li><a id="review" class="class2" href="#">复习资料</a></li>
+        </div>
+    </ul>
+
+    <!--发布键-->
+    <button type="button" id="issue" onclick="issue()">我&nbsp;要&nbsp;发&nbsp;布</button>
+
+    <!--滚动框-->
+    <div id="scroll_box">
+        <div id="ad_show">
+            <div class="ad" id="ad1"><img src="../image/ad/1.jpg"/></div>
+            <div class="ad" id="ad2"><img src="../image/ad/2.jpg"/></div>
+            <div class="ad" id="ad3"><img src="../image/ad/3.jpg"/></div>
+        </div>
+        <div id="ad_show_button">
+            <button type="button" id="ad1b" class="adsb">1</button>
+            <button type="button" id="ad2b" class="adsb">2</button>
+            <button type="button" id="ad3b" class="adsb">3</button>
+        </div>
+    </div>
+
+    <!--显示框-->
+    <iframe id="main_show">
+    </iframe>
+
+    <div id="page_turning_button">
+        <button type="button"><</button>
+        <span>1/1</span>
+        <button type="button">></button>
+    </div>
+
+    <!--页脚-->
+    <div id="footer">
+        <div id="foot_link">
+            <a id="us" href="#">关于我们</a>&nbsp;&nbsp;
+            <a id="help" href="#">帮助中心</a>&nbsp;&nbsp;
+            <a id="contact_manager" href="#">联系管理员</a> &nbsp;&nbsp;
+            <a id="ins" href="#">免责声明</a>&nbsp;&nbsp;
+            <a id="advice" href="#">我要提意见</a></br>
+            <p>版权所有&nbsp;SH 团队&nbsp;&nbsp;制作团队&nbsp;SH 团队</p>
+        </div>
+    </div>
+</body>
+
+</html>

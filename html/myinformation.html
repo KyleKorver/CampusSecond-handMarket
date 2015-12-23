@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>My Information Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/myinformation.css" />
+    <script src="../js/myinformation.js"></script>
+</head>
+
+<body onload="myinformation()">
+	<p id="prompt_txt"></p>
+	<form action="" mothed="post" onsubmit="return register_form(this)">
+		&nbsp;登录名：<input type="text"id="name" readonly="readonly"></input></br></br>
+
+        &nbsp;&nbsp;邮箱：<input type="email" id="email" readonly="readonly"></input></br></br>
+
+        手机号码：<input type="text" id="phone" readonly="readonly"></input></br></br>
+            
+        &nbsp;QQ号码：<input type="text" id="qq" readonly="readonly"></input></br></br>
+
+        <div id="pwddiv">&nbsp;新密码：<input type="password" id="password"></input></div></br>
+
+        <div id="repwddiv">确认密码：<input type="password" id="repassword"></input></div></br>
+
+        </br>
+        <input type="button" value="修改密码" id="pwd_button"  onclick="alter_pwd()"></input>
+        <input type="button" value="修改信息" id="alter_button" onclick="alter_info()"></input>
+        <input type="submit" value="保&nbsp;&nbsp;存" id="submit_button"></input>
+	</form>
+</body>
+
+</html>

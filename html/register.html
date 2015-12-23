@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Register Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
+    <script src="../js/register.js"></script>
+</head>
+
+<body onload="createCode()">
+    <div id="register_box">
+        <div id="head">注册</div>
+        <p id="prompt_txt"></p>
+        <form action="" mothed="post" onsubmit="return register_form(this)">
+            &nbsp;*登录名：<input type="text" autofocus="autofocus" id="name"></input></br></br>
+
+            &nbsp;&nbsp;*密码：<input type="password" id="password"></input></br></br>
+
+            *确认密码：<input type="password" id="repassword"></input></br></br>
+
+            &nbsp;&nbsp;*邮箱：<input type="email" id="email"></input></br></br>
+
+            *手机号码：<input type="text" id="phone"></input></br></br>
+            
+            &nbsp; QQ号码：<input type="text" id="qq"></input></br></br>
+            
+            &nbsp;*验证码：<input type="text" id="validate"></input>&nbsp;
+            <input type="text" id="vali_picture" readonly="readonly" onclick="createCode()"></input>
+
+            <p id="clickchange">点击验证码更换</p>
+
+            </br>
+            <input type="submit" value="提&nbsp;&nbsp;&nbsp;交" id="submit_button"></input>
+       </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+ul{
+	position:fixed;
+	width:7.375em;
+	padding:0em;
+	margin:0em;
+	list-style-type:none;
+	border-style: solid;
+	border-width: 0.125em;
+	border-color:#98BF21;
+}
+
+li a:link,li a:visited{
+	display:block;
+	font-style: "黑体";
+	font-weight:bold;
+	width:6.25em;
+	text-align:center;
+	text-decoration:none;
+	padding:0.625em;
+}
+
+#show_box{
+	position:relative;
+	left:7.5em;
+	width:53.125em;
+	height:25em;
+	border-width: 0em;
+}

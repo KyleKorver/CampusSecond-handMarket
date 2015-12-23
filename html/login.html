@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <script src="../js/login.js"></script>
+</head>
+
+<body>
+    <div id="login_box">
+        <div id="head">登录</div>
+        <div id="prompt"><p id="prompt_txt"></p></div>
+        </br>
+        <form action="" mothed="post" onsubmit="return validate_form(this)">
+            <div class=nap>登录名</div><input type="text" id="name" autofocus="autofocus"></input></br>
+            <div class=nap>密&nbsp;码</div><input type="password" id="password"></input></br>
+            <input type="submit" value="登&nbsp;&nbsp;&nbsp;录" id="submit_button"></input></br></br></br>
+        </form>
+        <a href="#" id="forget_pwd">忘记密码？</a>
+        <a href="javascript:register()" id="free_reg">免费注册</a>
+    </div>
+</body>
+
+</html>

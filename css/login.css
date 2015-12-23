@@ -1,0 +1,79 @@
+#login_box{
+	position:relative;
+	top:1.875em;
+	left:17.5em;
+	width:25.625em;
+	height:18.75em;
+	border-style:solid;
+	border-width:0.0625em;
+	border-color:#98BF21;
+}
+
+#head{
+	position:relative;
+	height:1.25em;
+	background-color:#98BF21;
+	font-style:"黑体";
+	font-weight:bold;
+	text-align:center;
+	color:#FFFFFF;
+	padding:0.4375em;
+}
+
+#prompt{
+	position:relative;
+	left:7em;
+	height:0.9375em;
+	color:red;
+	font-size:0.8125em;
+}
+
+form{
+	position:relative;
+	left:5.5em;
+}
+
+.nap{
+	position:relative;
+	top:0.075em;
+	width:3.4375em;
+	height:0.925em;
+	background-color:#98BF21;
+	font-style:"黑体";
+	font-weight:bold;
+	text-align:center;
+	color:#FFFFFF;
+	padding:0.3125em;
+}
+
+#name,#password{
+	position:relative;
+	top:-1.75em;
+	left:4.6875em;
+	height:1.375em;
+}
+
+#submit_button{
+	position:relative;
+	left:3.125em;
+	width:9.375em;
+	height:1.6875em;
+	background-color:#98BF21;
+	color:white;
+	border-color:#98BF21;
+	font-family: "黑体";
+    font-size:0.9375em;
+}
+
+a:link,a:visited{color:gray;font-size:0.8125em;}
+a:hover,a:active{color:#98BF21;font-size:0.8125em;}
+
+#forget_pwd{
+	position:relative;
+	left:12.5em;
+}
+
+#free_reg{
+	position:relative;
+	left:15.625em;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Goods Information Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/goodsinfo.css" />
+    <script src="../js/goodsinfo.js"></script>
+</head>
+
+<body onload="set()">
+    <div id="goods_information_box">
+        <div id="head">商品详情</div>
+        <p id="name"></p></br>
+        <img id="pic"/>
+        <input type="button" id="collect" onclick="collect()" value="收藏"></input>
+        <p id="price"></p></br>
+        <div id="des_box"><p id="describe"></p></br></div>
+        <a id="seller" href="goods.html"></a></br>
+        <p id="phone"></p></br>
+        <input type="button" id="contact" onclick="contact()" value="私信卖家"></input>
+        <div id="link">
+            <a href="goods.html">返回</a>
+        </div>
+    </div>
+    <form action="" mothed="post" id="contact_box">
+        <textarea rows="7" cols="40" onclick="this.value=''">在此输入：
+        </textarea>
+        <input type="submit" id="send" value="发送"></input>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+#prompt_txt{
+	position:relative;
+	left:5em;
+	top:1.25em;
+	height:0.9375em;
+	color:red;
+	font-size:0.8125em;
+}
+
+form{
+	position:relative;
+	left:3.125em;
+	top:1.875em;
+}
+
+#pwddiv,#repwddiv{
+	visibility:hidden;
+}
+
+#alter_button{
+	position:relative;
+	left:4.375em;
+	width:4.375em;
+	background-color:#98BF21;
+	color:white;
+    font-size:0.875em;
+    padding:0em;
+    border:0em;
+}
+
+#pwd_button{
+	position:relative;
+	left:3.125em;
+	width:4.375em;
+	background-color:#98BF21;
+	color:white;
+    font-size:0.875em;
+    padding:0em;
+    border:0em;
+}
+
+#submit_button{
+	position:relative;
+	left:-0.5em;
+	width:4.375em;
+	background-color:#98BF21;
+	color:white;
+    font-size:0.875em;
+    visibility:hidden;
+    padding:0em;
+    border:0em;
+}
